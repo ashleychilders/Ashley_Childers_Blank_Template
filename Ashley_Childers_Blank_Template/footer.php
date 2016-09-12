@@ -5,5 +5,6 @@
                 </div>
             </footer>
         </div> <!-- ends container -->
+    <?php wp_footer(); ?>
     </body>
 </html>
