@@ -1,0 +1,15 @@
+/*
+Theme Name: Ashley Childers Blank Theme
+Theme URI:
+Author: Ashley Childers
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: ashley_childers_blank_template
+*/
+
+*{
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5em;
+}
