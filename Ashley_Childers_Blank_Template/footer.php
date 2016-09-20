@@ -5,3 +5,6 @@
         <p>This is some cool footer content</p>
     </div>
 </footer>
+</div>
+</body>
+</html>
