@@ -5,7 +5,7 @@
   <title>Ashley Childers Blank Template</title>
 
   <!-- Links to our Style.css file -->
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 
   <!--
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,14 +14,26 @@
 
 <body>
   <div class="container">
+
   <!-- Begin Header -->
-      <header class="row">
-          <div class="twelve columns">
-              <h1>Ashley Childers Blank WordPress Template</h1>
-              <p>This is my WordPress template.</p>
-            </div>
-      </header>
+    <?php
+    /**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
+    get_header(); ?>
   <!-- End Header -->
+
   <!-- Begin Section Container -->
       <section class ="row">
           <div class="twelve columns">
@@ -30,13 +42,9 @@
           </div>
       </section>
   <!-- End Section Container -->
+
   <!-- Begin Fooder -->
-      <footer class="row">
-          <div class="twelve columns">
-              <h2>This is the Footer</h2>
-              <p>This is some cool footer content</p>
-          </div>
-  </footer>
+      <?php get_footer(); ?>
 <!-- End Footer -->
 </div>
 </body>
