@@ -11,8 +11,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @subpackage Ashley_Childers_Blank_Template
+ * @since Blank Template
  */
     get_header(); ?>
   <!-- End Header -->
@@ -20,7 +20,7 @@
   <!-- Begin Section Container -->
       <section class ="row">
           <div class="twelve columns">
-              <h2>Section Content - cool</h2>
+              <h3>Section Content - cool</h3>
               <p>This is a cool section</p>
           </div>
       </section>
@@ -29,6 +29,3 @@
   <!-- Begin Fooder -->
       <?php get_footer(); ?>
 <!-- End Footer -->
-</div>
-</body>
-</html>
