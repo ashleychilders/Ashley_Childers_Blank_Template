@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-  <section class="row">
-      <div class="eight columns">
+  <div class="row">
+      <div class="nine columns">
 
 <!-- BEGIN PAGE PHP -->
             <?php
@@ -10,17 +10,16 @@
                       the_post(); ?>
 
                   <h2><?php the_title(); ?></h2>
-                  <?php the_content(); ?>
-
-                <?php
-                }//end while
-              }//end if
-             ?>
-             <!-- End Loop -->
+                  <?php the_content();
+                endwhile;
+              endif; ?>
       </div>
-      <div class="four columns">
+
+      <div class="three columns">
           <?php get_sidebar(); ?>
       </div>
-    </section>
+      
+    </div>
+
 <!-- End Section Container -->
 <?php get_footer(); ?>
