@@ -1,11 +1,15 @@
-<footer class="row">
-    <div class="twelve columns">
-          <hr />
-        <h3>This is the Footer</h3>
-        <p>This is some cool footer content</p>
-    </div>
-    <?php wp_footer(); ?>
-</footer>
-</div>
+    <footer class="row">
+        <div class="four columns">
+
+        </div>
+        <div class="four columns">
+
+        </div>
+        <div class="four columns">
+
+        </div>
+      </footer>
+    </div><!---End Container Div -->
+      <?php wp_footer(); ?>
 </body>
 </html>
