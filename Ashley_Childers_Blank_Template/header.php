@@ -14,11 +14,17 @@
 -->
 <body>
   <div class="container">
-
-
-<header class="row">
-    <div class="twelve columns">
-        <h1><?php bloginfo('name'); ?></h1>
-        <h2><?php bloginfo('description'); ?></h2>
+  <header class="row">
+      <div class="twelve columns">
+          <h1><?php bloginfo('name'); ?></h1>
+          <h2><?php bloginfo('description'); ?></h2>
       </div>
-</header>
+  </header>
+    <div class="twelve columns">
+      <?php
+        wp_nav_menu(array(
+            'sort_column' => 'menu_order',
+            'container_class' => 'blank-menu-header'
+        ));?>
+    </div>
+</div>
