@@ -29,7 +29,7 @@
                   if ( has_post_thumbnail() ) {
                     the_post_thumbnail('thumbnail');
                   }
-                ?>        
+                ?>
                 <h3><?php the_title(); ?></h3>
                 <?php the_excerpt(); ?>
 
