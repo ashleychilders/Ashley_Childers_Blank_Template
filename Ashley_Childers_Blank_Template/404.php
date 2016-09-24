@@ -1,5 +1,5 @@
 <?php
-/* Template: 404 page (Not Found) */
+/* Template Name: 404 page (Not Found) */
 
 get_header(); ?>
 
