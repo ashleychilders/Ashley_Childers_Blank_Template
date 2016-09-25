@@ -1,27 +1,23 @@
 <?php get_header(); ?>
 
-  <section class="row">
+  <div class="row">
       <div class="twelve columns">
 
 <!-- BEGIN PAGE PHP -->
             <?php
-                if( have_posts() ){
-                    while( have_posts() ){
+                if( have_posts() ) :
+                    while( have_posts() ) :
                       the_post();
                       if ( has_post_thumbnail() ) { ?>
                         <div class="post-thumbnail">
-                          <?php the_post_thumbnail('large'); ?>
-                        <?php } ?>
-                       </div>
-                  <h2><?php the_title(); ?></h2>
-                  <?php the_content(); ?>
-
-                <?php
-                }//end while
-              }//end if
-             ?>
+                            <?php the_post_thumbnail('large'); ?></div>
+                            <?php } ?>
+                                  <h2><?php the_title(); ?></h2>
+                                  <?php the_content();
+                            endwhile;
+                        endif; ?>
              <!-- End Loop -->
       </div>
-    </section>
+    </div>
 <!-- End Section Container -->
 <?php get_footer(); ?>
